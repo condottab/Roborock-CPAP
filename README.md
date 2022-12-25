@@ -13,3 +13,14 @@ To get started you will need to make a small flyback protection board, which inc
 You can also order this board to be produced for you, there is a gerber file for this.
 
 Many thanks to [stas2z](https://github.com/stas2z) for the expertise and work done on researching different fans, for putting together the protection schematics and the gerber provided. You are a legend and a guiding star.
+
+BOM
+BZX55C5V1 x2
+1N5819 x1
+CF2WS-1K x1
+CF2WS-10K x1
+PH 2.0 connector x1
+Heat inserts m3x4.2x4 x5
+M3x5 screws x5
+
+The printed parts are in abs and tpu.
