@@ -4,16 +4,21 @@ CPAP cooling system using a Roborock fan
 
 This repo contains all the data I have collected about the wiring, control and powering of the Roborock fan. If any connection and control method is not indicated here, it is considered unsafe or has not been tested. As always, everything you do is at your own risk.
 
-There are several varieties of these fans on the market from different manufacturers, qinatsu and nidec have been tested. At the moment only one type of fan is considered unsuitable for our purposes, it is the 5.1kPA (or 5100) option from nidec, the others are found to be working. Chinese sellers often designate them in assumed pressure capacity, which probably has nothing to do with actual performance, but we can try to figure out what to buy and what not to from these values. It has been observed that the 2.5kPa option often means that it is a qinatsu fan, which is considered the most trouble free at the moment. The 2.0kPa version from nidec also works fine and you don't need to hunt those qinatsu. The only difference between them is nidec fails to start in the default connection and needs power switching along with the PWM supply, i.e. it needs to be powered from an extra hotend output with enable_pin prescribed in printer.cfg, while qinatsu should be powered directly from a 24V PSU. 
+There are several varieties of these fans on the market from different manufacturers, qinatsu and nidec have been tested. At the moment only one type of fan is considered unsuitable for our purposes, it is the 5.1kPA (or 5100) option from nidec, the others are found to be working. Chinese sellers often designate them in assumed pressure capacity, which probably has nothing to do with actual performance, but we can try to figure out what to buy and what not to from these values. It has been observed that the 2.5kPa option often means that it is a qinatsu fan, that heats less, but they both work great.
 
-PWM>HARDWARE PWM pin on a mainboard
-VCC>24v from psu if it's a qinatsu or 24v hotend output from the mainboard if it's a nidec
-GND> psu ground if it's a qinatsu or grounded pin of the hotend output prescribed as enable_pin: PIN in the fan config if it's a nidec
+The connection is as follows:
+
+PWM> HARDWARE PWM pin on a mainboard
+
+VCC> 24v hotend output from the mainboard
+
+GND> grounded pin of the hotend output prescribed as enable_pin: PIN in the fan config
+
 FG> doesn't go anywhere yet, but you can tinker with it if you know what you doing
 
 To get started you will need to make a small flyback protection board, which includes a 10k to pull down the fan's PWM pin. 
 
-![image](https://user-images.githubusercontent.com/121378039/209463332-eb5e78bd-5d68-430a-9899-52e133a1f721.png)
+![image](https://user-images.githubusercontent.com/121378039/212881528-e3a47822-b2a8-45af-89c8-67fd5614f81f.png)
 ![image](https://user-images.githubusercontent.com/121378039/210138044-a70bc6b9-4392-419c-870f-718244075b98.png)
 ![image](https://user-images.githubusercontent.com/121378039/210138046-b8b343f4-3be0-4117-823e-cbe7fd5357e5.png)
 
@@ -30,7 +35,9 @@ BOM
 
 BZX55C5V1 x2
 
-1N5819 x1
+1N5819 x1 (x4 if you want to use three in parallel instead of one 1N5822)
+
+1N5822 x1
 
 CF2WS-1K x1
 
