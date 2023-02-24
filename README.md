@@ -4,7 +4,7 @@ CPAP cooling system using a Roborock fan
 
 This repo contains all the data I have collected about the wiring, control and powering of the Roborock fan. If any connection and control method is not indicated here, it is considered unsafe or has not been tested. As always, everything you do is at your own risk.
 
-There are several varieties of these fans on the market from different manufacturers, qinatsu and nidec have been tested. At the moment only one type of fan is considered unsuitable for our purposes, it is the 5.1kPA (or 5100) option from nidec, the others are found to be working. Chinese sellers often designate them in assumed pressure capacity, which probably has nothing to do with actual performance, but we can try to figure out what to buy and what not to from these values. It has been observed that the 2.5kPa option often means that it is a qinatsu fan, that heats less, but they both work great.
+There are several varieties of these fans on the market from different manufacturers, qinatsu and nidec have been tested. At the moment only one type of fan is considered unsuitable for our purposes, it is the 5.1kPA (or 5100) option from nidec, the others are found to be working. Chinese sellers often designate them in assumed pressure capacity, which probably has nothing to do with actual performance, but we can try to figure out what to buy and what not to from these values. It has been observed that the 2.5kPa option often means that it is a qinatsu fan, that heats less, but they both work great. However, if you're not using active cooling, be sure to set the maximum fan power in the config. Something around 0.7 will keep you on the safe side. This is still plenty of airflow.
 
 The connection is as follows:
 
