@@ -51,6 +51,20 @@ M3x5 screws x5
 
 The printed parts are in abs and tpu.
 
+SMD BOM
+
+MDD DSK24 x1
+
+BZT52C5V1S x2
+
+102 resistor x1
+
+103 resistor x1
+
+SS56F x 1
+
+PH 2.0 connector x1
+
 ![image](https://user-images.githubusercontent.com/121378039/209482129-ca142f26-6aaa-42c2-b7cc-db964e90b7dd.png)
 ![image](https://user-images.githubusercontent.com/121378039/209482137-34fb8c10-3275-4c9c-b42b-c01cabe76723.png)
 ![image](https://user-images.githubusercontent.com/121378039/209482142-3b67b5ae-a99b-436a-9072-4c8cf7cfe082.png)
