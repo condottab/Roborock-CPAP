@@ -8,15 +8,15 @@ There are several types of these fans on the market from different manufacturers
 
 The connection is as follows:
 
-PWM> HARDWARE PWM pin on a mainboard
+PWM > HARDWARE PWM pin on the mainboard
 
-VCC> 24v hotend output from the mainboard
+VCC > 24V hotend output from the mainboard
 
-GND> grounded pin of the hotend output prescribed as enable_pin: PIN in the fan config
+GND > Grounded pin of the hotend output prescribed as enable_pin: PIN in the fan config
 
-FG> doesn't go anywhere yet, but you can tinker with it if you know what you doing
+FG > Doesn't go anywhere yet, but you can tinker with it if you know what you're doing.
 
-To get started you will need to make a small flyback protection board, which includes a 10k to pull down the fan's PWM pin. 
+To get started, you will need to make a small flyback protection board, which includes a 10k resistor to pull down the fan's PWM pin.
 
 ![image](https://user-images.githubusercontent.com/121378039/212881528-e3a47822-b2a8-45af-89c8-67fd5614f81f.png)
 ![image](https://user-images.githubusercontent.com/121378039/210138044-a70bc6b9-4392-419c-870f-718244075b98.png)
