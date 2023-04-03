@@ -1,5 +1,5 @@
 # Roborock-CPAP
-CPAP cooling system using a Roborock fan
+Remote blowing system using a Roborock fan
 ![image](https://user-images.githubusercontent.com/121378039/209463936-7d26f6cb-ce1e-449f-b166-296438bd0f6a.png)
 
 This repo contains all the data I have collected about wiring, controlling and powering the Roborock fan. If a connection and control method is not mentioned here, it is considered unsafe or has not been tested. As always, everything you do is at your own risk.
